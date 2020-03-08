@@ -1,0 +1,18 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2;
+}
+
+.container {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.container-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.new-entry-btn {
+    height: 100%
+}
