@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Entry Form</title>
+		<!--bootstrap 4 css-->
+		<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		      rel="stylesheet">
+		<link href="styles/entry-form.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<!--nav bar-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Smart Journaling</a>
+			<button class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown">
+							Archives </a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">2020</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">2019</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">2018</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<button class="btn btn-outline-success new-entry-btn">New Entry</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<h3 class="container-title">Please enter the below form to submit your entry</h3>
+			<form>
+				<div class="form-group row">
+					<label for="date" class="col-4 col-form-label">Date</label>
+					<div class="col-8">
+						<input id="date" name="date" placeholder="Please enter date (Example: 05)" type="text"
+						       class="form-control" required="required">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="month" class="col-4 col-form-label">Month</label>
+					<div class="col-8">
+						<input id="month" name="month" placeholder="Please enter month (Example: March or Mar or 03)"
+						       type="text" class="form-control" required="required">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="year" class="col-4 col-form-label">Year</label>
+					<div class="col-8">
+						<input id="year" name="year" placeholder="Please enter year (Example: 2021)" type="text"
+						       class="form-control" required="required">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="time" class="col-4 col-form-label">Time</label>
+					<div class="col-8">
+						<input id="time" name="time" placeholder="Please enter time (Example: HH:MM)" type="text"
+						       class="form-control" required="required">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="location" class="col-4 col-form-label">Location</label>
+					<div class="col-8">
+						<input id="location" name="location"
+						       placeholder="Please enter location (Example: Home or office or stadium)" type="text"
+						       class="form-control" required="required">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="title" class="col-4 col-form-label">Title</label>
+					<div class="col-8">
+						<input id="title" name="title"
+						       placeholder="Please enter title (Example: What are my thoughts for today)" type="text"
+						       class="form-control" required="required">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="content" class="col-4 col-form-label">Content</label>
+					<div class="col-8">
+					<textarea id="content" name="content" cols="40" rows="10" class="form-control" required="required"
+					          aria-describedby="contentHelpBlock"></textarea>
+						<!--TODO add the below helper text dynamically being typed in the text area-->
+						<span id="contentHelpBlock" class="form-text text-muted">"Today I feel good about life in general. Grateful about the morning coffee. Working towards to a better health these days by...."</span>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="offset-4 col-8">
+						<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--bootstrap 4 - js related files-->
+		<script crossorigin="anonymous"
+		        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script crossorigin="anonymous"
+		        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script crossorigin="anonymous"
+		        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
