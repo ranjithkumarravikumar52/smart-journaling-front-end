@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Archives</title>
+		<title>Archives in a month</title>
 		<!--bootstrap 4 css-->
 		<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -10,6 +10,31 @@
 		<link href="styles/archives.css" rel="stylesheet">
 	</head>
 	<body>
+		<!--nav bar-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Smart Journaling</a>
+			<button class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown">
+							Archives </a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">2020</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">2019</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">2018</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<button class="btn btn-outline-success new-entry-btn">New Entry</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<div class="container">
 			<h1 class="text-center container-title">2018 - Jan</h1>
 			<!--TODO fine tune the card-deck via https://getbootstrap.com/docs/4.1/components/card/#card-columns-->
