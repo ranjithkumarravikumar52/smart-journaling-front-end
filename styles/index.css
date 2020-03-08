@@ -24,7 +24,8 @@ body {
 }
 
 .new-entry-btn {
-    height: 100%
+    text-align: center;
+    margin: auto;
 }
 
 .testimonial-image {

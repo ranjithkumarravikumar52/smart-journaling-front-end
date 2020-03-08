@@ -14,5 +14,6 @@ body {
     text-align: center;
 }
 .new-entry-btn {
-    height: 100%
+    text-align: center;
+    margin: auto;
 }
